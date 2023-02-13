@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante al gusto</title>
+    <link rel="shorcut icon" href="./imagenes/iconopagina.jpg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-principal">
+            <ul class="nav">
+                <li><a href="index.html">Restaurante</a></li>
+                <li><a href="Carta.html">Carta</a></li>
+                <li><a href="Especialidades.html">Especialidades</a></li>
+                <li><a href="MenuParaGrupos.html">Grupos</a></li>
+                <li><a href="Reservas.html">Reservas</a></li>
+                </ul>
+            
+        </nav>
+        <section class="textos-header">
+            <h1>Restaurante Al gusto</h1>
+            <h2>Donde siempre querrás volver</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: rgb(244, 244, 245);"></path>
+            </svg></div>
+    </header>
+    <h1 class="titulo">Reservas</h1>
+    <div class="conjunto-reserva">
+    <section class="form-contact">
+        <form action="" class="contact" method="POST">
+            <label for="nombres">Nombre y Apellidos</label>
+            <input type="text" name="nombres" id="nombres">
+
+            <label for="Personas">Nº Personas</label>
+            <input type="number">
+            <label for="correo">Correo</label>
+            <input type="text" name="correo" id="correo">
+            <label for="nombres">Nº Contacto</label>
+            <input type="text" name="telefono" id="telefono">
+            <label for="fecha">Fecha</label>
+            <input type="date">
+            <label for="hora">Horario de mañana</label>
+            <input type="time" name="hora" value="14:00" max="15:00" min="13:00" step="1">
+            <label for="hora">Horario de tarde</label>
+            <input type="time" name="hora" value="21:00" max="23:00" min="19:30" step="1">
+            <label for="mensaje">Observaciones</label>
+            <textarea name="mensaje" id="mensaje"></textarea>
+            <input id="boton-formulario" type="submit" value="Reservar">
+        </form>
+    </section>
+    <div class="nuestro-servicio">
+    <h2 >Nuestro selecto servicio</h2>
+            <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur unde distinctio
+                maiores? Illo earum in
+                consequatur a delectus obcaecati ex, distinctio accusamus architecto dignissimos assumenda blanditiis
+                hic itaque et fuga?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum minima minus tenetur temporibus debitis
+                magni, laborum reiciendis neque quas culpa rerum, possimus placeat! Repellendus odit voluptate velit
+                perferendis commodi numquam?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eos facere ut ex soluta harum
+                repudiandae earum odio? Officia nemo aspernatur excepturi a omnis iusto optio deleniti tenetur illo
+                esse!<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In numquam blanditiis neque fugit ullam animi
+                quam beatae quaerat quis? Laboriosam quos id consequuntur quis inventore ullam sapiente, porro vero
+                voluptatum?
+            </p>
+            <div class="mapa">
+                <iframe  
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6360.613622470958!2d-3.6166057041663304!3d37.145403548442175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fb706506b77f%3A0x8e99ed521340a5ca!2sNevada%20Shopping!5e0!3m2!1ses!2ses!4v1656495158743!5m2!1ses!2ses"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </div>
+            </div>
+    
+    
+            
+            
+    
+
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>HORARIO</h4>
+                <p>Horario de cocina:</p>
+                <p>13:00 h. a 16.00h. - 20.00 h. a 23.30 h.</p>
+            </div>
+            <div class="content-foo">
+                <h4>DIRECCIÓN</h4>
+                <p>Centro comercial Nevada Shopping</p>
+                <p>Calle Hipócrates Armilla CP.18100</p>
+            </div>
+            <div class="content-foo">
+                <h4>TEXTO LEGAL</h4>
+                <p>Aviso Legal Recogida de datos</p>
+                <p>Política de Cookies</p>
+            </div>
+        </div>
+        <h2 class="politica-privacidad">Aviso legal | Politica de privacidad | Politica de cookies </h2>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>

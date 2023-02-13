@@ -1,0 +1,1633 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Grape nuts',cursive;
+}
+/*cookies*/
+.aviso-cookies {
+	display: none;
+	background: #fff;
+	padding: 20px;
+	width: calc(100% - 40px);
+	max-width: 300px;
+	line-height: 150%;
+	border-radius: 10px;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	z-index: 100;
+	padding-top: 60px;
+	box-shadow: 0px 2px 20px 10px rgba(222,222,222,.25);
+	text-align: center;
+}
+
+.aviso-cookies.activo {
+	display: block;
+}
+
+.aviso-cookies .galleta {
+	max-width: 100px;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+.aviso-cookies .titulo,
+.aviso-cookies .parrafo {
+	margin-bottom: 15px;
+}
+
+.aviso-cookies .boton {
+	width: 100%;
+	background: #595959;
+	border: none;
+	color: #fff;
+	text-align: center;
+	padding: 15px 20px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+
+.aviso-cookies .boton:hover {
+	background: #000;
+}
+
+.aviso-cookies .enlace {
+	color: #4DBFFF;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.aviso-cookies .enlace:hover {
+	text-decoration: underline;
+}
+
+.fondo-aviso-cookies {
+	display: none;
+	background: rgba(0,0,0,.20);
+	position: fixed;
+	z-index: 99;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+}
+
+.fondo-aviso-cookies.activo {
+	display: block;
+}
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 10000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: #000000ea;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    text-decoration: underline;
+}
+.titulo-secundario{
+    color: #000000ea;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    
+}
+
+header{
+    width: 100%;
+    height: 450px; 
+background: -webkit-linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671)), url(../imagenes/cabecera.jpg);
+background: linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671)), url(../imagenes/cabecera.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+}
+
+.nav {
+    background: -webkit-linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671));
+    background: linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671)) ;
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    z-index:1;
+  }
+  
+  .nav * {
+    
+    transition: all .35s ease;
+  }
+  
+  .nav li {
+    
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    padding: 0;
+  }
+  
+  .nav a {
+    
+    padding: .5em .8em;
+    color: rgba(250, 250, 250, 0.904);
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .nav a::before,
+  .nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+  }
+  
+  .nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #060706;
+    border-right: 3px solid #080808;
+    transform: translate(-100%, 50%);
+  }
+  
+  .nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #000000;
+    border-left: 3px solid #0a0a0a;
+    transform: translate(100%, -50%)
+  }
+  
+  .nav a:hover:before,
+  .nav a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  
+  .nav a:hover {
+    color: #0e0f0e;
+  }
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+header .textos-header{
+    display: flex;
+    height: 430px;;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+}
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+/*Servicio a la mesa*/
+
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contenedor-sobre-nosotros img{
+    width: 35%;
+    border-radius: 8%;
+} 
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+.contenido-textos h3 span{
+    background: #000000ea;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*Galeria*/
+
+.portafolio{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(23, 83%, 29%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+
+}
+.hover-galeria a{
+    text-decoration: none;
+}
+.hover-galeria a p{
+    color: #f2f2f2;
+    
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/*Especialidades*/
+
+.cards{
+   
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: -webkit-linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671));
+    background: linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671));
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    margin-left: 10px;
+    filter: drop-shadow(5px 5px 10px black);
+}
+
+.cards .card img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 10%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: rgb(10, 9, 9);
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+    
+}
+
+/*Nuestros servicios*/
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+.servicio-cont{
+    display: flex;
+    padding-left: 30%;
+    align-items: center;
+}
+
+.servicio-ind{
+    position: relative;
+    right: 4%;
+    width: 28%;
+    margin: 4%;
+    text-align: center;
+}
+.servicio-ind img{
+    width: 60%;
+    
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*footer*/
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.content-foo{
+    text-align: center;
+}
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #000000ea;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.content-foo p{
+    color: white;
+}
+.politica-privacidad{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+
+/*Para la pagina de carta he usado el mismo diseño que para las especialidades del index*/
+
+
+/* Pagina de Especialidades*/
+
+.Especialidades{
+    padding-left: 7%;
+    padding-right: 7%;
+
+}
+.Especialidad img{
+  
+    height: 320px;
+    filter: drop-shadow(5px 5px 10px black);
+    width:300px;
+    border-radius: 5% 5% 5% 5%;
+    
+}
+.titulo-especialidad{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.Especialidad p{
+   
+padding-top: 5%;
+text-align: center;
+    color: white;
+    width: 900px;
+    font-weight: bold;
+    margin-left: 50px;
+    
+}
+.precio-especialidad{
+    position: relative;
+    top: 250px;
+    right: 45%;
+    color: white;
+    font-weight: bold;
+   
+}
+
+.Especialidad {
+   display: flex;
+   justify-content: space-between;
+   border-radius: 1%;
+   background: -webkit-linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671));
+    background: linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671));
+    filter: drop-shadow(5px 5px 10px black);
+    margin-bottom: 50px;
+}
+
+/*Menu para grupos*/
+
+.nav-grupos{
+
+    background: rgba(0, 0, 0, 0.966);
+  width: 200px;
+  margin-left: 45%;
+  margin-right: 10%;  
+  box-shadow: 0 0 8px 10px rgba(12, 5, 5, 1);
+}
+.nav-grupos ul{
+    list-style: none;
+    overflow: hidden; 
+}
+.nav-grupos ul >li{
+  float: left;
+    
+    font-size: 16px;
+}
+.nav-grupos ul > li > a{
+   
+   display: block;
+   
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.nav-grupos ul  li:hover {
+    background: linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671));
+    
+  }
+
+
+.menus-grupos{
+    
+    width: 80%;
+    background: -webkit-linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671)), url(../imagenes/cabecera.jpg);
+background: linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671)), url(../imagenes/cabecera.jpg);
+    margin-left: 10%;
+    margin-top: 1%;
+  
+    border-radius: 0.3%;
+    
+}
+.menu-grupo{
+    border: solid black;
+    box-shadow: 0 0px 3px 2px rgba(0, 0, 3, 3);
+    width: 100%;
+    height:100%;
+   
+}
+.introduccion-menu{
+    
+    color: white;
+    background-color: black;
+    box-shadow: 0 0 8px 10px rgba(12, 5, 5, 1);
+    width: 40%;
+    margin-top: 3%;
+    margin-left: 30%;
+    margin-bottom: 2%;
+   
+}
+.menu-grupo h2{
+    text-align: center;
+    margin-top: 4%;
+    color: white;
+    
+}
+.apartado-menu h2{
+    text-align: center;
+
+}
+.apartado-menu{
+   
+   
+background-color: #fff;
+
+}
+.precio-menu{
+    text-align: right;
+    margin-bottom: 8%;
+}
+.platos-menu{
+    box-shadow: 0 0px 3px 4px rgba(0, 0, 3, 3);
+    height: 350px;
+    width: 100%;
+    display: flex;
+}
+.plato-menu{
+    
+    width: 100%;
+    color: white;
+    
+    
+}
+.plato-menu h3{
+    text-align: center;
+}
+.platos-menu .plato-menu img{
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    height: 70%;
+    width: 50%;
+    border-radius: 2%;
+    box-shadow: 0 0px 3px 4px rgba(0, 0, 3, 3);
+}
+
+.nav-reserva{
+
+    background: rgba(0, 0, 0, 0.966);
+    position: relative;
+    bottom: 110px;
+  width: 170px;
+  margin-left: 45%;
+  margin-right: 10%;  
+  box-shadow: 0 0 8px 10px rgba(12, 5, 5, 1);
+}
+.nav-reserva ul{
+    list-style: none;
+    overflow: hidden; 
+}
+.nav-reserva ul >li{
+  float: left;
+    
+    font-size: 16px;
+}
+.nav-reserva ul > li > a{
+   
+   display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.nav-reserva ul li:hover {
+    background: linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671));
+  }
+
+/*Reservas*/
+
+.form-contact {
+    background: #FFF;
+    position: relative;
+    left: 15%;
+    width: 15%;
+    top: 300px;
+    transform: translate(-50%, -50%);
+    box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
+    border-radius: 5%;
+  }
+  
+
+  
+  .contact {
+    padding: .8rem;
+    overflow: hidden;
+    color: gray;
+  }
+  
+  .contact label, .contact input, .contact textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;   
+  }
+  
+  .contact label {
+    font-weight: 700;
+  }
+  
+  .contact input:not([type='submit']), .contact textarea {
+    border: none;
+    border-bottom: 2px solid #964823;
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
+    color: gray;
+  }
+  
+  .contact textarea {
+    min-height: 100px;
+  }
+  
+  input[type='submit'] {
+    padding: 10px;
+    background: #964823;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  
+  }
+  .titulo{
+    text-align: center;
+  }
+  .mapa{
+    
+    height: 500px;
+    width: 80%;
+  }
+ .mapa iframe{
+    width: 70%;
+    height: 90%;
+    margin-left: 15%;
+    margin-top: 3%;
+    filter: drop-shadow(5px 5px 10px black);
+    border-radius: 5% 5% 5% 5%;
+
+ }
+.nuestro-servicio{
+    
+    position: absolute;
+    top: 530px;
+    width: 60%;
+    height: 65%;
+    margin-left: 30%;
+}
+
+
+ /*Diseño responsive*/
+
+
+
+
+ @media screen and (max-width:465px) {
+    /*Pagina de Especialidades*/
+     
+     
+    .Especialidades{
+     padding-left: 7%;
+     padding-right: 7%;
+ 
+ }
+ .Especialidad {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1%;
+    background: -webkit-linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671));
+     background: linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671));
+     filter: drop-shadow(5px 5px 10px black);
+     margin-bottom: 50px;
+ } 
+ .Especialidad img{
+   
+     height: 100%;
+     filter: drop-shadow(5px 5px 10px black);
+     width:50%;
+     border-radius: 5% 5% 5% 5%;
+     
+ }
+ .titulo-especialidad{
+     text-align: center;
+     margin-top: 15px;
+     margin-bottom: 15px;
+ }
+ .Especialidad p{
+    
+    padding-top: 5%;
+    overflow: hidden;
+    height: 1px;
+     color: white;
+     font-weight: bold;
+     
+     
+ }
+ .precio-especialidad{
+        
+        
+    margin-right: 5px;
+        position: relative;
+        top: 80%;
+        left: 1px;
+        height: 20%;
+        color: white;
+        font-weight: bold;
+        margin-right: 2%;
+   
+}
+ 
+ 
+ .Especialidad {
+    display: flex;
+    
+    justify-content: space-between;
+    border-radius: 1%;
+    background: -webkit-linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671));
+     background: linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671));
+     filter: drop-shadow(5px 5px 10px black);
+     margin-bottom: 50px;
+ } 
+ /*Pagina MenuParaGrupos*/
+
+     .platos-menu .plato-menu img{
+        margin-left: 20%;
+        margin-top: 40%;
+        margin-bottom: 8%;
+        width: 70%;
+        height: 27%;
+        border-radius: 2%;
+        box-shadow: 0 0px 3px 4px rgba(0, 0, 3, 3);
+    }
+    .nav-grupos{
+
+        background: rgba(0, 0, 0, 0.966);
+      width: 200px;
+      margin-left: 25%;
+      margin-right: 10%;  
+      box-shadow: 0 0 8px 10px rgba(12, 5, 5, 1);
+    }
+    .nav-reserva{
+
+        background: rgba(0, 0, 0, 0.966);
+        position: relative;
+        bottom: 110px;
+      width: 170px;
+      margin-left: 25%;
+      margin-right: 10%;  
+      box-shadow: 0 0 8px 10px rgba(12, 5, 5, 1);
+    }
+    
+    /*Pagina Reservas*/
+    .conjunto-reserva .form-contact {
+       
+        background: #FFF;
+        position: absolute;
+        top: 1560px;
+        width: 250px;
+        margin-left: 35%;
+        transform: translate(-50%, -50%);
+        box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
+        border-radius: 5%;
+      }
+    
+    .nuestro-servicio .mapa{
+
+       padding-bottom: 20%;
+        width: 30%;
+        
+      }
+      .nuestro-servicio .mapa iframe{
+        width: 30%;
+        height: 20%;
+        margin-left: 15%;
+        margin-top: 3%;
+        filter: drop-shadow(5px 5px 10px black);
+        border-radius: 5% 5% 5% 5%;
+    
+     }
+    .conjunto-reserva .nuestro-servicio{
+        position: absolute;
+        top: 550px;
+        width: 20%;
+        height: 75%;
+        margin-left: 15%;
+    }
+    
+    .conjunto-reserva{
+       
+        height: 800px;
+        margin-bottom: 800px;
+    }
+ }
+
+ 
+@media screen and (max-width:500px){
+    .nav-principal .nav{
+        background: -webkit-linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671));
+    background: linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671)) ;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+   
+    z-index:1;
+   
+    }
+    .nav-principal .nav li  {
+        text-align: center;
+        display : inline;
+        height: 20%;
+        width: 20%;
+        align-items : center;
+         justify-content : center;
+        
+    }
+    .nav-principal .nav li > a{
+        
+        justify-content: space-evenly;
+        font-weight: lighter;
+        padding: 0%;
+      
+    }
+    
+        
+    
+    .textos-header h1{
+        font-size: 35px;
+    }
+    .textos-header h2{
+        font-size: 20px;
+    }
+    /*About us*/
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 40%;
+        border-radius: 8%;
+    }
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+    /*Galeria*/
+    .imagen-port{
+        width: 95%;
+    }
+
+    /*Especialidades*/
+    .cards .card{
+       height: 450px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .cards .card img{
+        width: 250px;
+        height: 200px;
+    }
+
+
+    /*Nuestros servicios*/
+   .servicio-ind{
+    text-align: center;
+    margin-right: 30%;
+   } 
+    /*footer*/
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .content-foo h4{
+        border: none;
+    }
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+    .titulo-final{
+        font-size: 20px;
+        width: 100%;
+    }
+    /*Pagina de Especialidades*/
+    
+    
+    .Especialidades{
+        padding-left: 7%;
+        padding-right: 7%;
+    
+    }
+    .Especialidad img{
+      
+        height: 100%;
+        filter: drop-shadow(5px 5px 10px black);
+        width:50%;
+        border-radius: 5% 5% 5% 5%;
+        
+    }
+    .titulo-especialidad{
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .Especialidad p{
+        
+    padding-top: 5%;
+
+    text-align: center;
+        color: white;
+        width: 900px;
+        font-weight: bold;
+        
+        
+    }
+    .Especialidad .precio-especialidad{
+        
+        position: relative;
+       top: 205px;
+        color: white;
+        font-weight: bold;
+        margin-right: 2%;
+       
+    }
+    
+    .Especialidad {
+       display: flex;
+       
+       justify-content: space-between;
+       border-radius: 1%;
+       background: -webkit-linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671));
+        background: linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671));
+        filter: drop-shadow(5px 5px 10px black);
+        margin-bottom: 50px;
+    }
+
+    
+    /*Pagina menuParaGrupos*/
+    .platos-menu .plato-menu img{
+        margin-left: 20%;
+        margin-top: 40%;
+        margin-bottom: 8%;
+        width: 70%;
+        height: 27%;
+        border-radius: 2%;
+        box-shadow: 0 0px 3px 4px rgba(0, 0, 3, 3);
+    }
+    .nav-grupos{
+
+        background: rgba(0, 0, 0, 0.966);
+      width: 200px;
+      margin-left: 30%;
+      margin-right: 10%;  
+      box-shadow: 0 0 8px 10px rgba(12, 5, 5, 1);
+    }
+    .nav-reserva{
+
+        background: rgba(0, 0, 0, 0.966);
+        position: relative;
+        bottom: 110px;
+      width: 170px;
+      margin-left: 30%;
+      margin-right: 10%;  
+      box-shadow: 0 0 8px 10px rgba(12, 5, 5, 1);
+    }
+    /*Pagina Reservas*/
+    .conjunto-reserva .form-contact {
+        
+        background: #FFF;
+        position: absolute;
+        top: 1560px;
+        width: 250px;
+        margin-left: 35%;
+        transform: translate(-50%, -50%);
+        box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
+        border-radius: 5%;
+      }
+    
+    .nuestro-servicio .mapa{
+
+       padding-bottom: 15%;
+        height: 320px;
+        width: 100%;
+        
+      }
+      .nuestro-servicio .mapa iframe{
+        width: 70%;
+        height: 90%;
+        margin-left: 15%;
+        margin-top: 3%;
+        filter: drop-shadow(5px 5px 10px black);
+        border-radius: 5% 5% 5% 5%;
+    
+     }
+    .conjunto-reserva .nuestro-servicio{
+        position: absolute;
+        top: 550px;
+        width: 20%;
+        height: 75%;
+        margin-left: 15%;
+    }
+    
+    .conjunto-reserva{
+        
+        height: 800px;
+        margin-bottom: 800px;
+    }
+}
+
+
+
+@media screen and (min-width:500px) {
+    .imagen-about-us{
+        width: 300px;
+    }
+    .servicio-ind{
+        text-align: center;
+        margin-right: 30%;
+    }
+    /*Pagina de Especialidades*/
+    
+    
+    .Especialidades{
+        padding-left: 7%;
+        padding-right: 7%;
+    
+    }
+    .Especialidad {
+        display: flex;
+        
+        width: 100%;
+        height: 250px;
+        justify-content: space-between;
+        border-radius: 1%;
+        background: -webkit-linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671));
+         background: linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671));
+         filter: drop-shadow(5px 5px 10px black);
+         margin-bottom: 50px;
+     }
+    .Especialidades .Especialidad img{
+       width:50%;
+       height:100%;
+        filter: drop-shadow(5px 5px 10px black);
+        border-radius: 5% 5% 5% 5%;
+        
+    }
+    .titulo-especialidad{
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .Especialidad p{
+       
+    padding-top: 5%;
+
+    text-align: center;
+        color: white;
+        width: 80%;
+        font-weight: bold;
+        
+        
+    }
+    .Especialidad .precio-especialidad{
+        
+        margin-right: 5px;
+        position: relative;
+        top: 80%;
+        left: 1px;
+        height: 20%;
+        color: white;
+        font-weight: bold;
+        margin-right: 2%;
+       
+    }
+    /*Pagina menuParaGrupos*/
+    .platos-menu .plato-menu img{
+        margin-left: 20%;
+        margin-top: 40%;
+        margin-bottom: 8%;
+        width: 70%;
+        height: 28%;
+        border-radius: 2%;
+        box-shadow: 0 0px 3px 4px rgba(0, 0, 3, 3);
+    }
+    
+    .nav-grupos{
+
+        background: rgba(0, 0, 0, 0.966);
+      width: 200px;
+      margin-left: 30%;
+      margin-right: 10%;  
+      box-shadow: 0 0 8px 10px rgba(12, 5, 5, 1);
+    }
+    .nav-reserva{
+
+        background: rgba(0, 0, 0, 0.966);
+        position: relative;
+        bottom: 28px;
+      width: 170px;
+      margin-left: 30%;
+      margin-right: 10%;  
+      box-shadow: 0 0 8px 10px rgba(12, 5, 5, 1);
+    }
+}
+@media screen and (min-width:600px) {
+    /*Pagina Especialidades*/
+    .Especialidades .Especialidad img{
+        
+       width:30%;
+       height:100%;
+        filter: drop-shadow(5px 5px 10px black);
+        border-radius: 5% 5% 5% 5%;
+        
+    }
+    
+    .nav-grupos{
+
+        background: rgba(0, 0, 0, 0.966);
+      width: 200px;
+      margin-left: 36%;
+      margin-right: 10%;  
+      box-shadow: 0 0 8px 10px rgba(12, 5, 5, 1);
+    }
+    
+    .nav-reserva{
+
+        background: rgba(0, 0, 0, 0.966);
+        position: relative;
+        bottom: 28px;
+      width: 170px;
+      margin-left: 40%;
+      margin-right: 10%;  
+      box-shadow: 0 0 8px 10px rgba(12, 5, 5, 1);
+    }
+    /*Pagina Reservas*/
+    .form-contact {
+        background: #FFF;
+        position: relative;
+        width: 250px;
+        margin-left: 4%;
+        transform: translate(-50%, -50%);
+        box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
+        border-radius: 5%;
+      }
+    
+    .mapa{
+        height: 320px;
+        width: 100%;
+        position: relative;
+      }
+      .mapa iframe{
+        width: 70%;
+        height: 90%;
+        margin-left: 15%;
+        margin-top: 3%;
+        filter: drop-shadow(5px 5px 10px black);
+        border-radius: 5% 5% 5% 5%;
+    
+     }
+    .nuestro-servicio{
+        position: absolute;
+        top: 530px;
+        width: 50%;
+        height: 75%;
+        margin-left: 40%;
+    }
+    
+}
+@media screen and (max-width:725px){
+    /*Pagina Reservas*/
+    .conjunto-reserva .form-contact {
+        background: #FFF;
+        position: absolute;
+        top: 1560px;
+        width: 250px;
+        margin-left: 35%;
+        transform: translate(-50%, -50%);
+        box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
+        border-radius: 5%;
+      }
+    
+    .mapa{
+       
+        height: 320px;
+        width: 100%;
+        
+      }
+      .mapa iframe{
+        width: 70%;
+        height: 90%;
+        margin-left: 15%;
+        margin-top: 3%;
+        filter: drop-shadow(5px 5px 10px black);
+        border-radius: 5% 5% 5% 5%;
+    
+     }
+    .conjunto-reserva .nuestro-servicio{
+        position: absolute;
+        top: 550px;
+        width: 70%;
+        height: 75%;
+        margin-left: 15%;
+    }
+    .conjunto-reserva .nuestro-servicio p{
+        width: 100%;
+    }
+    .conjunto-reserva{
+        height: 800px;
+        margin-bottom: 550px;
+    }
+    /*Menu-nav*/
+    .nav li {
+        display: inline-block;
+        list-style: outside none none;
+        margin: 0;
+        padding: 0;
+      }
+      .nav a {
+        padding:0%;
+        color: rgba(250, 250, 250, 0.904);
+        position: relative;
+        text-decoration: none;
+        font-size: 20px;
+      }
+    
+    
+}
+@media screen and (min-width:730px) {
+    .platos-menu .plato-menu img{
+        margin-left: 20%;
+        margin-top: 40%;
+        margin-bottom: 8%;
+        width: 55%;
+        height: 28%;
+        border-radius: 2%;
+        box-shadow: 0 0px 3px 4px rgba(0, 0, 3, 3);
+    }
+    /*Imagen sobre nosotros*/
+    .contenedor-sobre-nosotros img{
+        width: 30%;
+        border-radius: 8%;
+    }
+}
+@media screen and (max-width:900px){
+    /*index*/
+    header{
+        background-position: center;
+    }
+   
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+    .imagen-about-us{
+        width: 50%;
+        border-radius: 8%;
+    }
+    /*Galeria*/
+    .imagen-port{
+        width: 44%;
+    }
+    /*Especialidades*/
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards .card{
+        width: 90%;
+        margin-bottom: 15px;
+    }
+    
+    /*Servicios*/
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+    .servicio-ind img{
+        width: 30%;
+    }
+    .nav-principal{
+        background: -webkit-linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671));
+    background: linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671)) ;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: 5%;
+   padding-top: 10px;
+    z-index:1;
+    }
+    .nav li {
+        display: inline-block;
+        list-style: outside none none;
+        margin: .3em 1em;
+        padding: 0;
+      }
+      .nav a {
+        padding:0%;
+        color: rgba(250, 250, 250, 0.904);
+        position: relative;
+        text-decoration: none;
+        font-size: 20px;
+      }
+    /*Pagina especialidades*/
+
+    .Especialidades{
+        padding-left: 7%;
+        padding-right: 7%;
+    
+    }
+    .Especialidad img{
+      
+        height: 50%;
+        filter: drop-shadow(5px 5px 10px black);
+        width:50%;
+        border-radius: 5% 5% 5% 5%;
+        
+    }
+    .titulo-especialidad{
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .Especialidad p{
+        
+    padding-top: 5%;
+    text-align: center;
+    height: 250px;
+    width: 150px;
+    overflow: hidden;
+        color: white;
+        font-weight: bold;
+        
+        
+    }
+    .precio-especialidad{
+        
+        position: relative;
+        top: 250px;
+        left: 1px;
+        color: white;
+        font-weight: bold;
+        margin-right: 2%;
+       
+    }
+    
+    .Especialidad {
+       display: flex;
+       justify-content: space-between;
+       border-radius: 1%;
+       background: -webkit-linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671));
+        background: linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671));
+        filter: drop-shadow(5px 5px 10px black);
+        margin-bottom: 50px;
+    }
+    /*Pagina Reservas*/
+    .form-contact {
+        background: #FFF;
+        position: relative;
+        width: 250px;
+        margin-left: 4%;
+        transform: translate(-50%, -50%);
+        box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
+        border-radius: 5%;
+      }
+    
+    .mapa{
+        height: 320px;
+        width: 100%;
+        position: relative;
+      }
+      .mapa iframe{
+        width: 70%;
+        height: 90%;
+        margin-left: 15%;
+        margin-top: 3%;
+        filter: drop-shadow(5px 5px 10px black);
+        border-radius: 5% 5% 5% 5%;
+    
+     }
+    .nuestro-servicio{
+        position: absolute;
+        top: 530px;
+        width: 50%;
+        height: 75%;
+        margin-left: 40%;
+    }
+
+}
+@media screen and (min-width:900px){
+    /*Imagen sobre nosotros*/
+    .contenedor-sobre-nosotros img{
+        width: 35%;
+        border-radius: 8%;
+    } 
+    .cards{
+       
+        height: 350px;
+        margin-bottom: 2%;
+        
+    }
+    .cards .card{
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+     .cards .card img{
+         width: 130px;
+         height: 120px;
+     }
+     .contenido-texto-card p{
+        
+        height: 130px;
+        overflow: hidden;
+     }
+     .servicio-ind img{
+        width: 110%;
+     }
+     /*Pagina de Especialidades*/
+    
+    
+    .Especialidades{
+        padding-left: 7%;
+        padding-right: 7%;
+    
+    }
+    .Especialidades .Especialidad img{
+        width: 20%;
+        height: 100%;
+        filter: drop-shadow(5px 5px 10px black);
+        border-radius: 5% 5% 5% 5%;
+        
+    }
+    .titulo-especialidad{
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .Especialidad p{
+    padding-top: 5%;
+    text-align: center;
+        color: white;
+        width: 80%;
+        font-weight: bold;
+        
+        
+    }
+    .precio-especialidad{
+        
+        margin-right: 5px;
+        position: relative;
+        top: 80%;
+        left: 1px;
+        height: 20%;
+        color: white;
+        font-weight: bold;
+        margin-right: 2%;
+       
+    }
+    
+    .Especialidad {
+       display: flex;
+       width: 100%;
+       height: 250px;
+       justify-content: space-between;
+       border-radius: 1%;
+       background: -webkit-linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671));
+        background: linear-gradient(to right, hsla(41, 98%, 58%, 0.678), hsla(0, 70%, 41%, 0.678), hsla(228, 61%, 26%, 0.671));
+        filter: drop-shadow(5px 5px 10px black);
+        margin-bottom: 50px;
+    }
+     /*Pagina menuParaGrupos*/
+    .platos-menu .plato-menu img{
+        margin-left: 20%;
+        margin-top: 15%;
+        margin-bottom: 8%;
+        width: 70%;
+        height: 50%;
+        border-radius: 2%;
+        box-shadow: 0 0px 3px 4px rgba(0, 0, 3, 3);
+    }
+    .nav-grupos{
+
+        background: rgba(0, 0, 0, 0.966);
+      width: 200px;
+      margin-left: 40%;
+      margin-right: 10%;  
+      box-shadow: 0 0 8px 10px rgba(12, 5, 5, 1);
+    }
+    .nav-reserva{
+
+        background: rgba(0, 0, 0, 0.966);
+        position: relative;
+        bottom: 28px;
+      width: 170px;
+      margin-left: 45%;
+      margin-right: 10%;  
+      box-shadow: 0 0 8px 10px rgba(12, 5, 5, 1);
+    }
+    /*Pagina Reservas*/
+    .form-contact {
+        background: #FFF;
+        position: relative;
+        left: 13%;
+        width: 20%;
+        top: 300px;
+        transform: translate(-50%, -50%);
+        box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
+        border-radius: 5%;
+      }
+    
+    .mapa{
+
+        height: 400px;
+        width: 80%;
+      }
+      .mapa iframe{
+        width: 70%;
+        height: 90%;
+        margin-left: 15%;
+        margin-top: 3%;
+        filter: drop-shadow(5px 5px 10px black);
+        border-radius: 5% 5% 5% 5%;
+    
+     }
+    .nuestro-servicio{
+        
+        position: absolute;
+        top: 530px;
+        width: 60%;
+        height: 65%;
+        margin-left: 30%;
+    }
+    
+    
+}
+@media screen and (min-width:1000px) {
+    /*Imagen sobre nosotros*/
+    .contenedor-sobre-nosotros img{
+        width: 28%;
+        border-radius: 8%;
+    } 
+}
+@media screen and (min-width:1335px) {
+    .contenedor-sobre-nosotros img{
+        width: 15%;
+        border-radius: 8%;
+    } 
+    /*Pagina menuParaGrupos*/
+.platos-menu .plato-menu img{
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    width: 50%;
+    height: 70%;
+    border-radius: 2%;
+    box-shadow: 0 0px 3px 4px rgba(0, 0, 3, 3);
+}
+/*Pagina menuParaGrupos*/
+.nav-grupos{
+
+    background: rgba(0, 0, 0, 0.966);
+  width: 200px;
+  margin-left: 45%;
+  margin-right: 10%;  
+  box-shadow: 0 0 8px 10px rgba(12, 5, 5, 1);
+}
+/*Pagina Especialidades*/
+.Especialidades .Especialidad img{
+   width:15%;
+   height:100%;
+    filter: drop-shadow(5px 5px 10px black);
+    border-radius: 5% 5% 5% 5%;
+    
+}
+}
+
+
